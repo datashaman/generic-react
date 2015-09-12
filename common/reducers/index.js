@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
+import * as reducers from './query';
 
-const rootReducer = combineReducers({
-  counter
-});
+const rootReducer = combineReducers(reducers);
 
 export default rootReducer;
